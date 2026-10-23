@@ -160,7 +160,8 @@ static void test_passcode(void)
     /* Well-known values (aprsc/aprsd algorithm): N0CALL 13023. */
     CHECK(aprs_passcode("N0CALL") == 13023, "N0CALL %d", aprs_passcode("N0CALL"));
     CHECK(aprs_passcode("n0call-9") == 13023, "ssid/case");
-    CHECK(aprs_passcode("") == -1, "empty");
+    CHECK(aprs_passcode("") == (0x73e2 & 0x7fff), "empty call: the key (aprsc)");
+    CHECK(aprs_passcode(NULL) == -1, "NULL");
 }
 
 static void test_encoders(void)

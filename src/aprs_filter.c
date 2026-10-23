@@ -53,7 +53,6 @@ int aprs_passcode(const char *callsign)
         n++;
     }
     root[n] = '\0';
-    if (n == 0) return -1;
     for (i = 0; i < n; i += 2) {
         hash ^= (unsigned int)(unsigned char)root[i] << 8;
         if (i + 1 < n) hash ^= (unsigned char)root[i + 1];

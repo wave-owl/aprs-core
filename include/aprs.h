@@ -117,7 +117,7 @@ typedef struct {
  * may still be APRS_T_UNKNOWN), -1 when the line is not TNC2. Never reads past the line. */
 int aprs_decode(const char *line, aprs_packet *out);
 
-/* APRS-IS passcode of a callsign (SSID ignored), 0..32767; -1 for an empty call. */
+/* APRS-IS passcode of a callsign (SSID ignored, at most 9 characters), 0..32767; -1 for NULL. */
 int aprs_passcode(const char *callsign);
 
 /* Server-side filter (APRS-IS filter syntax, aprsc semantics): check syntax; 0 ok, else -1
