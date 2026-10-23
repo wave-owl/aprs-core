@@ -1,0 +1,30 @@
+# Expected values where this core differs from aprslib on purpose or aprslib has no
+# answer; line<TAB>field=value...<TAB>why=reason. '-' removes an aprslib field.
+DL1>APRS::NWS-WARN :tornado	type=bulletin	why=NWS addressees are bulletins (APRS101 ch. 14, libfap)
+DL1ABC>APRS:!4963.50N/07201.75W-garbage	lat=-	lon=-	nopos=1	type=position	why=minutes >= 60 are rejected (libfap: invalid position), the packet stays
+NOTTNC2 line	decode=fail	why=no TNC2 header
+DL1ABC>APRS:!12	type=unknown	nopos=1	why=too short for a position
+FROMCALL>APRS:!4903.5 N/07201.7 W-ambiguity 1	amb=1	why=ambiguity count (libfap pos_ambiguity)
+FROMCALL>APRS:!49  .  N/072  .  W-ambiguity 4	amb=4	why=ambiguity count
+DL2XYZ>APRS:!5011.22N\00841.33E#PHG5132 digi	phg=25	comment=digi	why=PHG extension (aprslib keeps it in a dict)
+DL2XYZ>APRS:!5011.22N/00841.33ErRNG0050 repeater	rng=80.5	comment=repeater	why=RNG extension
+N0CALL>APRS:!/5L!!<*e7>{?!	rng=32.4	why=compressed range (APRS101 ch. 9)
+N0CALL>S32UVT:`(_fn"Oj/]Comment	mice=returning	comment=Comment	why=Mic-E type byte ']' is not comment (libfap)
+DB0WX>APRS:@092345z4903.50N/07201.75W_220/004g005t077r000p000P000h50b09900	wind=220	why=wind direction of a weather position
+DB0WX>APRS:_10090556c...s...g...t-05h00b10132	type=weather	temp=-20.6	hum=100	press=1013.2	why=missing fields left out (aprslib refuses the packet)
+DB0ABC>APRS:)AID #2!4903.50N/07201.75WA	type=item	name=AID #2	alive=1	lat=49.05833	lon=-72.02917	sym=/A	why=items (aprslib: unsupported)
+DB0ABC>APRS:)WATER_4903.50N/07201.75Ww	type=item	name=WATER	alive=0	lat=49.05833	lon=-72.02917	sym=/w	why=killed item
+DB0T>APRS:T#005,199,000,255,073,123,01101001	type=telemetry	seq=005	a1=199	bits=01101001	why=telemetry (aprslib: unsupported)
+DB0T>APRS:T#MIC,199,000,255,073,123,01101001	type=telemetry	seq=MIC	a1=199	why=MIC sequence
+DB0T>APRS::DB0T     :PARM.Battery,Btemp	type=telemetry-meta	meta=PARM	to=DB0T	text=Battery,Btemp	why=telemetry parameters
+DB0T>APRS::DB0T     :EQNS.0,0.1,0,0,1,-40,0,1,0,0,1,0,0,1,0	type=telemetry-meta	meta=EQNS	why=telemetry equations
+DL1>APRS::BLN1WX   :storm warning	to=BLN1WX	text=storm warning	why=group bulletin
+DL1>APRS::BLNA     :meeting tonight	type=bulletin	to=BLNA	text=meeting tonight	why=announcement
+DL1>APRS:$GPWPL,4807.038,N,01131.000,E,WPTNME*5C	type=waypoint	name=WPTNME	lat=48.1173	lon=11.51667	why=NMEA waypoint (aprslib: unsupported)
+DL1>APRS:$GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A	type=position	lat=48.1173	lon=11.51667	course=84	speed=41.48	why=NMEA RMC
+DL1>APRS:$GPGGA,123519,4807.038,N,01131.000,E,1,08,0.9,545.4,M,46.9,M,,*47	type=position	lat=48.1173	lon=11.51667	why=NMEA GGA
+IGATE>APRS,TCPIP*,qAC,T2:}DL2XYZ>APRS,TCPIP,IGATE*:!4903.50N/07201.75W-PHG5132	third=1	src=DL2XYZ	type=position	lat=49.05833	phg=25	why=third party unwrapped
+DL1>APRS:?APRS?	type=query	why=query
+DL1>APRS:<IGATE,MSG_CNT=3	type=capabilities	why=capabilities
+DL1>APRS:{Q1qwerty	type=user-defined	why=user defined
+DL1ABC-9>APRS,WIDE1-1*,WIDE2-1:!4903.50N/07201.75W>088/036/A=001234 Hello	comment=Hello	why=altitude removed from the comment

@@ -1,0 +1,18 @@
+aprs-core
+Copyright (c) 2026 Gerolf Ziegenhain
+Licensed under the GNU General Public License, version 3 or (at your option) any later version.
+
+The decoder follows libfap 1.5, Copyright 2009-2014 Tapio Aaltonen OH2GVE, the C port of
+Ham::APRS::FAP by Heikki Hannikainen OH7LZB; libfap is free software under the GNU General
+Public License version 1 or (at your option) any later version, or the Artistic License
+(https://github.com/wave-owl/libfap, commit 074f4ab7732a9e37c1dc07d10bf3048e294bce0b).
+
+The APRS-IS passcode and the server-side filter semantics follow aprsc, (c) Matti Aarnio
+OH2MQK and Heikki Hannikainen OH7LZB, BSD licence (https://github.com/wave-owl/aprsc, commit
+53782729641ff38ec1c338122b59b537774e82e9, src/passcode.c, src/filter.c); the passcode
+algorithm was released to the open-source APRS community by Steve Dimse on 2000-04-11.
+
+aprslib by Rossen Georgiev (GPL-2.0-or-later, https://github.com/wave-owl/aprs-python, commit
+c2a0f18ce028a4cced582567a73d57f0d03cd00f) is run as a test oracle only; no code is used.
+
+Formats: APRS Protocol Reference 1.0.1 (TAPR) and APRS 1.2 (J. Langner WB2OSZ).

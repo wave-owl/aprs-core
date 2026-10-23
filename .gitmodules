@@ -1,0 +1,9 @@
+[submodule "ref/aprsc"]
+	path = ref/aprsc
+	url = https://github.com/wave-owl/aprsc.git
+[submodule "ref/aprs-python"]
+	path = ref/aprs-python
+	url = https://github.com/wave-owl/aprs-python.git
+[submodule "ref/libfap"]
+	path = ref/libfap
+	url = https://github.com/wave-owl/libfap.git
