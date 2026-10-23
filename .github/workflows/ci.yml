@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: make
+      - name: Test (API, encoders, passcode, filter, garbage, aprslib vectors)
+        run: make test
+      - name: Test (ASan + UBSan)
+        run: make sanitize
+
+  reference:
+    # The decoder vectors are regenerated with the pinned aprslib (oracle) and must equal the
+    # committed tests/vectors/decode.tsv.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate vectors with aprslib
+        run: make ref && git diff --exit-code tests/vectors/decode.tsv
+      - name: Test against them
+        run: make test
