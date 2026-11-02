@@ -13,7 +13,7 @@
           "content": "3d4b481af8ef8ddb1d02d53ff86fd7bebf4551c893b5dccc585fda565f9875ba"
         }
       ],
-      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/aprs-core/.source-input/.github/workflows/ci.yml",
+      "name": "tracked-source/.github/workflows/ci.yml",
       "type": "file"
     },
     {

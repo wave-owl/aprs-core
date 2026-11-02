@@ -32,7 +32,7 @@ None.
 | src/aprs_filter.c | 53782729641ff38ec1c338122b59b537774e82e9 | declared-vendored-source | unresolved; manual review required |
 | actions/checkout | v4 | Syft source/package discovery | unresolved |
 | actions/setup-python | v5 | Syft source/package discovery | unresolved |
-| /Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/aprs-core/.source-input/.github/workflows/ci.yml | unresolved | Syft source/package discovery | unresolved |
+| tracked-source/.github/workflows/ci.yml | unresolved | Syft source/package discovery | unresolved |
 
 License evidence paths/hashes, source manifests, model hashes and conditional
 CMake declarations are recorded in SBOM.cdx.json. Declared upstream pins do not
