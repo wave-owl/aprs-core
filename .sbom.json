@@ -1,0 +1,54 @@
+{
+  "gitlinks": {
+    "ref/aprs-python": {
+      "repository": "wave-owl/aprs-python",
+      "licenses": [
+        "LICENSE"
+      ],
+      "role": "reference-only"
+    },
+    "ref/aprsc": {
+      "repository": "wave-owl/aprsc",
+      "licenses": [
+        "src/LICENSE"
+      ],
+      "role": "reference-only"
+    },
+    "ref/libfap": {
+      "repository": "wave-owl/libfap",
+      "licenses": [
+        "COPYING"
+      ],
+      "role": "reference-only"
+    }
+  },
+  "vendored": [
+    {
+      "path": "src/aprs_decode.c",
+      "repository": "wave-owl/libfap",
+      "commit": "074f4ab7732a9e37c1dc07d10bf3048e294bce0b",
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    },
+    {
+      "path": "src/aprs_filter.c",
+      "repository": "wave-owl/aprsc",
+      "commit": "53782729641ff38ec1c338122b59b537774e82e9",
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    }
+  ],
+  "references": [],
+  "models": [],
+  "external_libraries": []
+}

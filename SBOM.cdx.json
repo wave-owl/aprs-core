@@ -1,0 +1,443 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "7561d461b00ff11d",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "420afed5b835097e58dccb089bbc0bdcb34137fc"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "3d4b481af8ef8ddb1d02d53ff86fd7bebf4551c893b5dccc585fda565f9875ba"
+        }
+      ],
+      "name": "/Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/aprs-core/.source-input/.github/workflows/ci.yml",
+      "type": "file"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/aprs-python@c2a0f18ce028a4cced582567a73d57f0d03cd00f",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/aprs-python/tree/c2a0f18ce028a4cced582567a73d57f0d03cd00f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/aprs-python",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "reference-only"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "c2a0f18ce028a4cced582567a73d57f0d03cd00f"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "d7b3858fdda65d253ee9692129e28be9b5824f22"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/aprs-python"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "scope": "excluded",
+      "type": "library",
+      "version": "c2a0f18ce028a4cced582567a73d57f0d03cd00f"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/aprsc@53782729641ff38ec1c338122b59b537774e82e9",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/aprsc/tree/53782729641ff38ec1c338122b59b537774e82e9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/aprsc",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "reference-only"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "53782729641ff38ec1c338122b59b537774e82e9"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "98c72aab5c5b9391f6a263530a054c7e18df1598"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/aprsc"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"src/LICENSE\", \"sha256\": \"56c4b0960a55ddc6c9d36059fafe1e6e0138a16f7519c0840f0b5c3a8546440e\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "scope": "excluded",
+      "type": "library",
+      "version": "53782729641ff38ec1c338122b59b537774e82e9"
+    },
+    {
+      "bom-ref": "git:https://github.com/wave-owl/libfap@074f4ab7732a9e37c1dc07d10bf3048e294bce0b",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/libfap/tree/074f4ab7732a9e37c1dc07d10bf3048e294bce0b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/libfap",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "reference-only"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "074f4ab7732a9e37c1dc07d10bf3048e294bce0b"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "6eb513aed66b75d816bbe5e67aa7e26438d0ca01"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/libfap"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"COPYING\", \"sha256\": \"efc0525431cb97e2ba274772c8f204f85b88b18f1dcce26c54553506a0b4728c\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "scope": "excluded",
+      "type": "library",
+      "version": "074f4ab7732a9e37c1dc07d10bf3048e294bce0b"
+    },
+    {
+      "bom-ref": "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3",
+      "cpe": "cpe:2.3:a:actions\\/checkout:actions\\/checkout:v4:*:*:*:*:*:*:*",
+      "name": "actions/checkout",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/checkout@v4",
+      "type": "library",
+      "version": "v4"
+    },
+    {
+      "bom-ref": "pkg:github/actions/setup-python@v5?package-id=0ac68409cceaeece",
+      "cpe": "cpe:2.3:a:actions\\/setup-python:actions\\/setup-python:v5:*:*:*:*:*:*:*",
+      "name": "actions/setup-python",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "github-actions-usage-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "github-action"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "github-actions-use-statement"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup-python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup_python:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup:actions\\/setup-python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:actions\\/setup:actions\\/setup_python:v5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/.github/workflows/ci.yml"
+        }
+      ],
+      "purl": "pkg:github/actions/setup-python@v5",
+      "type": "library",
+      "version": "v5"
+    },
+    {
+      "bom-ref": "vendored:src/aprs_decode.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/libfap/tree/074f4ab7732a9e37c1dc07d10bf3048e294bce0b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/aprs_decode.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"8ad8fe55b36d8bfb926a14606e32b0f94da3941a7d31eab86393db6307e39b76\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"8ad8fe55b36d8bfb926a14606e32b0f94da3941a7d31eab86393db6307e39b76\"}, {\"path\": \"README.md\", \"sha256\": \"e5db437d15244cc06701d7e1d21e61ec6feb563e4b5457040d877600431c9090\"}, {\"path\": \"src/aprs_decode.c\", \"sha256\": \"2f4f806f43c1ede5ebbe4f81f0a620af41f1c6e9f43400abb8657d43e03db46b\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "074f4ab7732a9e37c1dc07d10bf3048e294bce0b"
+    },
+    {
+      "bom-ref": "vendored:src/aprs_filter.c",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/aprsc/tree/53782729641ff38ec1c338122b59b537774e82e9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "src/aprs_filter.c",
+      "properties": [
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"8ad8fe55b36d8bfb926a14606e32b0f94da3941a7d31eab86393db6307e39b76\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        },
+        {
+          "name": "sbom:role",
+          "value": "declared-vendored-source"
+        },
+        {
+          "name": "sbom:source-manifest",
+          "value": "[{\"path\": \"NOTICE\", \"sha256\": \"8ad8fe55b36d8bfb926a14606e32b0f94da3941a7d31eab86393db6307e39b76\"}, {\"path\": \"README.md\", \"sha256\": \"e5db437d15244cc06701d7e1d21e61ec6feb563e4b5457040d877600431c9090\"}, {\"path\": \"src/aprs_filter.c\", \"sha256\": \"2bce841e753b7e320422ce6591ffe7b85aaeb0e610c1be0ae2392699b4a90010\"}]"
+        },
+        {
+          "name": "sbom:provenance-verification",
+          "value": "declared origin; local blob hashes do not establish upstream equivalence"
+        }
+      ],
+      "type": "library",
+      "version": "53782729641ff38ec1c338122b59b537774e82e9"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "unknown",
+      "assemblies": [
+        "git:https://github.com/wave-owl/aprs-core@94eb3f6a71e8ca755355ae727f85f973b3c56fe4"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [],
+      "ref": "7561d461b00ff11d"
+    },
+    {
+      "dependsOn": [
+        "7561d461b00ff11d",
+        "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3",
+        "pkg:github/actions/setup-python@v5?package-id=0ac68409cceaeece",
+        "vendored:src/aprs_decode.c",
+        "vendored:src/aprs_filter.c"
+      ],
+      "ref": "git:https://github.com/wave-owl/aprs-core@94eb3f6a71e8ca755355ae727f85f973b3c56fe4"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/aprs-python@c2a0f18ce028a4cced582567a73d57f0d03cd00f"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/aprsc@53782729641ff38ec1c338122b59b537774e82e9"
+    },
+    {
+      "dependsOn": [],
+      "ref": "git:https://github.com/wave-owl/libfap@074f4ab7732a9e37c1dc07d10bf3048e294bce0b"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/checkout@v4?package-id=fa2e67b8c20f75f3"
+    },
+    {
+      "dependsOn": [],
+      "ref": "pkg:github/actions/setup-python@v5?package-id=0ac68409cceaeece"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/aprs_decode.c"
+    },
+    {
+      "dependsOn": [],
+      "ref": "vendored:src/aprs_filter.c"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "git:https://github.com/wave-owl/aprs-core@94eb3f6a71e8ca755355ae727f85f973b3c56fe4",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/wave-owl/aprs-core/tree/94eb3f6a71e8ca755355ae727f85f973b3c56fe4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "License evidence; see declared files"
+          }
+        }
+      ],
+      "name": "wave-owl/aprs-core",
+      "properties": [
+        {
+          "name": "sbom:role",
+          "value": "source-root"
+        },
+        {
+          "name": "sbom:git-commit",
+          "value": "94eb3f6a71e8ca755355ae727f85f973b3c56fe4"
+        },
+        {
+          "name": "sbom:git-tree",
+          "value": "4794f4f077837ed650950bc02575dba5d08255c7"
+        },
+        {
+          "name": "sbom:source-repository",
+          "value": "https://github.com/wave-owl/aprs-core"
+        },
+        {
+          "name": "sbom:release-tags",
+          "value": "[\"v0.1.0\"]"
+        },
+        {
+          "name": "sbom:license-evidence",
+          "value": "[{\"path\": \"LICENSE\", \"sha256\": \"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986\"}]"
+        },
+        {
+          "name": "sbom:license-resolution",
+          "value": "unresolved; manual review required"
+        }
+      ],
+      "type": "application",
+      "version": "94eb3f6a71e8ca755355ae727f85f973b3c56fe4"
+    },
+    "properties": [
+      {
+        "name": "sbom:scope",
+        "value": "Source repository inventory only; completeness is UNKNOWN. Syft inventories tracked source/package manifests. Gitlinks and declared vendored/model evidence are inspected at immutable pins. CMake declarations are conditional requirements, not resolved installations. This is NOT proof of operating-system packages, static-link closure, build-time resolution, or the contents of release binaries."
+      },
+      {
+        "name": "sbom:generation-status",
+        "value": "success"
+      },
+      {
+        "name": "sbom:generation-errors",
+        "value": "[]"
+      }
+    ],
+    "timestamp": "2026-11-02T16:49:26.787844+00:00",
+    "tools": {
+      "components": [
+        {
+          "author": "anchore",
+          "name": "syft",
+          "type": "application",
+          "version": "1.55.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:784274c9-c01b-4c4a-a6fd-b53fdef772d9",
+  "specVersion": "1.6",
+  "version": 1
+}
